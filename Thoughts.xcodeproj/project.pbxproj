@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2F93C621908C81D08FB553E9 /* Pods_Thoughts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD63FF7EAF0EC6FD95A22E58 /* Pods_Thoughts.framework */; };
-		CEB81971269DE9ED00F0AE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB81970269DE9ED00F0AE31 /* Assets.xcassets */; };
+		CE1868A426A0948300CC3632 /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1868A326A0948300CC3632 /* blog.png */; };
+		CE1868A626A096E500CC3632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1868A526A096E500CC3632 /* GoogleService-Info.plist */; };
 		CEBB3C34269CAA2B00B4AFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3C33269CAA2B00B4AFFC /* AppDelegate.swift */; };
 		CEBB3C36269CAA2B00B4AFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3C35269CAA2B00B4AFFC /* SceneDelegate.swift */; };
 		CEBB3C38269CAA2B00B4AFFC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3C37269CAA2B00B4AFFC /* HomeViewController.swift */; };
@@ -24,12 +25,15 @@
 		CEC0671E269DD1D9005F8A26 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0671D269DD1D9005F8A26 /* DatabaseManager.swift */; };
 		CEC06720269DD1E5005F8A26 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0671F269DD1E5005F8A26 /* AuthManager.swift */; };
 		CEC06722269DD1FF005F8A26 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC06721269DD1FF005F8A26 /* StoreManager.swift */; };
+		CED7730426A0D41D00F13E64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7730326A0D41D00F13E64 /* User.swift */; };
+		CED7730626A0D42900F13E64 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7730526A0D42900F13E64 /* BlogPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31D99378D8CA4AD15E90053F /* Pods-Thoughts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.debug.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.debug.xcconfig"; sourceTree = "<group>"; };
 		5B04330514F81F993A818002 /* Pods-Thoughts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.release.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.release.xcconfig"; sourceTree = "<group>"; };
-		CEB81970269DE9ED00F0AE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
+		CE1868A326A0948300CC3632 /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog.png; sourceTree = "<group>"; };
+		CE1868A526A096E500CC3632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEBB3C30269CAA2B00B4AFFC /* Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB3C33269CAA2B00B4AFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB3C35269CAA2B00B4AFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		CEC0671D269DD1D9005F8A26 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		CEC0671F269DD1E5005F8A26 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		CEC06721269DD1FF005F8A26 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		CED7730326A0D41D00F13E64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CED7730526A0D42900F13E64 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		DD63FF7EAF0EC6FD95A22E58 /* Pods_Thoughts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thoughts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +124,7 @@
 				CEC0670A269DCD8D005F8A26 /* View */,
 				CEC06709269DCD83005F8A26 /* Model */,
 				CEBB3C41269CAA3000B4AFFC /* Info.plist */,
+				CE1868A526A096E500CC3632 /* GoogleService-Info.plist */,
 			);
 			path = Thoughts;
 			sourceTree = "<group>";
@@ -134,6 +141,8 @@
 		CEC06709269DCD83005F8A26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CED7730326A0D41D00F13E64 /* User.swift */,
+				CED7730526A0D42900F13E64 /* BlogPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,7 +168,7 @@
 		CEC0670C269DCD99005F8A26 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				CEB81970269DE9ED00F0AE31 /* Assets.xcassets */,
+				CE1868A326A0948300CC3632 /* blog.png */,
 				CEBB3C33269CAA2B00B4AFFC /* AppDelegate.swift */,
 				CEBB3C35269CAA2B00B4AFFC /* SceneDelegate.swift */,
 			);
@@ -183,7 +192,6 @@
 				31D99378D8CA4AD15E90053F /* Pods-Thoughts.debug.xcconfig */,
 				5B04330514F81F993A818002 /* Pods-Thoughts.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -247,7 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBB3C40269CAA3000B4AFFC /* LaunchScreen.storyboard in Resources */,
-				CEB81971269DE9ED00F0AE31 /* Assets.xcassets in Resources */,
+				CE1868A426A0948300CC3632 /* blog.png in Resources */,
+				CE1868A626A096E500CC3632 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED7730626A0D42900F13E64 /* BlogPost.swift in Sources */,
 				CEBB3C38269CAA2B00B4AFFC /* HomeViewController.swift in Sources */,
 				CEC06720269DD1E5005F8A26 /* AuthManager.swift in Sources */,
 				CEC0671E269DD1D9005F8A26 /* DatabaseManager.swift in Sources */,
 				CEC06716269DD15E005F8A26 /* SignUpViewController.swift in Sources */,
 				CEBB3C34269CAA2B00B4AFFC /* AppDelegate.swift in Sources */,
 				CEC06714269DD138005F8A26 /* SignInViewController.swift in Sources */,
+				CED7730426A0D41D00F13E64 /* User.swift in Sources */,
 				CEC0670F269DD061005F8A26 /* ProfileViewController.swift in Sources */,
 				CEC0671A269DD195005F8A26 /* CreateNewPostViewController.swift in Sources */,
 				CEC06722269DD1FF005F8A26 /* StoreManager.swift in Sources */,
@@ -450,7 +461,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31D99378D8CA4AD15E90053F /* Pods-Thoughts.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Thoughts/Info.plist;
@@ -470,7 +480,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B04330514F81F993A818002 /* Pods-Thoughts.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Thoughts/Info.plist;
